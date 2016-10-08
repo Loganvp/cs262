@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 public class Lab05settings extends AppCompatActivity {
 
+    // it initializes the fragment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
