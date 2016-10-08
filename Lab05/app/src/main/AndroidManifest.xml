@@ -15,7 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lab05about"></activity>
+        <activity
+            android:name=".Lab05about"
+            android:label="About" >
+        </activity>
+        <activity
+            android:name=".Lab05settings"
+            android:label="Settings" >
+            </activity>
     </application>
 
 </manifest>

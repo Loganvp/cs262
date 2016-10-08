@@ -33,6 +33,9 @@ public class Lab05 extends AppCompatActivity {
             case edu.calvin.lv33.Lab05.R.id.goToAbout:
                 startActivity(new Intent(Lab05.this, Lab05about.class));
                 return true;
+            case edu.calvin.lv33.Lab05.R.id.goToSettings:
+                startActivity(new Intent(Lab05.this, Lab05settings.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
