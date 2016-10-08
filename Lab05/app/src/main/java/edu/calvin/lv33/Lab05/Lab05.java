@@ -1,4 +1,4 @@
-package edu.calvin.lv33.lab04;
+package edu.calvin.lv33.Lab05;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,18 +6,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
 
+// Main class
+public class Lab05 extends AppCompatActivity {
+
+    // Override onCreate method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lab05);
     }
 
     // Override onCreateOptionsMenu method
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.settings, menu);
+        getMenuInflater().inflate(edu.calvin.lv33.Lab05.R.menu.optionmenu, menu);
         return true;
     }
 
@@ -27,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         switch(item.getItemId()) {
 
             // Go to other activity if selected
-            case R.id.goToSettings:
-                startActivity(new Intent(lab04.this, settings.class));
+            case edu.calvin.lv33.Lab05.R.id.goToAbout:
+                startActivity(new Intent(Lab05.this, Lab05about.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
