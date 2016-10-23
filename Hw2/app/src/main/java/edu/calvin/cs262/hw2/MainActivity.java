@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private URL createURL(String id) {
         try {
-            String urlString = getString(R.string.web_service_url) +
-                    URLEncoder.encode(id, "UTF-8");
+            String urlString = getString(R.string.web_service_url)
+                    ;//URLEncoder.encode(id, "UTF-8");
             return new URL(urlString);
         } catch (Exception e) {
             Toast.makeText(this, getString(R.string.connection_error), Toast.LENGTH_SHORT).show();

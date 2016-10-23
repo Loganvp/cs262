@@ -1,0 +1,12 @@
+Logan VanProyen
+Lab07 - CS262
+------------------
+Exercise 7.1
+
+Database: gameDatabase
+
+Player(ID, emailAddress, name)
+PlayerGame(saveID, gameID, playerID, score, cash, pieceLocation)
+Game (ID, time)
+SavedGameInfo(ID, assetType, location) 
+
