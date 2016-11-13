@@ -11,24 +11,29 @@ import java.util.TimeZone;
  * @author deitel
  * @author kvlinden
  * @version spring, 2017
+ *
+ * @author Loganvp
+ * @version 2016
+ *
  */
-public class Players {
+public class Player {
 
-    private String emailaddress, name;
     private int id;
+    private String emailaddress, name;
 
-    public Players(int id, String emailaddress, String name) {
+    public Player(int id, String emailaddress, String name) {
         this.id = id;
         this.emailaddress = emailaddress;
-        this.name = name;
+        this.name =  name;
     }
 
-    public String getId() { return id + ""; }
-    public String getEmailaddress() {
+    public int getID() {
+        return id;
+    }
+    public String getEmailAddress() {
         return emailaddress;
     }
     public String getName() {
         return name;
     }
-
 }

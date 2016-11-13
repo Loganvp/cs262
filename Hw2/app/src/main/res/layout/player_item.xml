@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="5sp"
-    android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=": "
+            android:text=", "
             style="@style/normalText"  />
 
         <TextView
@@ -32,43 +29,18 @@
             android:text="@string/summary_text"
             style="@style/normalText"  />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.02">
-
         <TextView
-            android:text="MIN: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/minLabel" />
+            android:text=", "
+            style="@style/normalText"  />
 
         <TextView
-            android:text="min"
+            android:id="@+id/emailTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/minTextView" />
-
-        <TextView
-            android:text=" - "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dashLabel" />
-
-        <TextView
-            android:text="MAX: "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/maxLabel" />
-
-        <TextView
-            android:text="max"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/maxTextView" />
+            android:text="@string/summary_text"
+            style="@style/normalText"  />
 
     </LinearLayout>
 
