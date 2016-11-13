@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Reset TextEdit field to blank and apps title to homework 2
         cityText.setText("");
-        setTitle("Homework 2 - Monopoly Players");
+        setTitle("Monopoly Players for Lab9");
 
         fetchButton.setOnClickListener(new View.OnClickListener() {
             @Override
